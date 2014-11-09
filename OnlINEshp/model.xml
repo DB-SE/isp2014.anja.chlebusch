@@ -4,49 +4,190 @@
 			<and abstract="true" mandatory="true" name="Root">
 				<and name="Onlineshop">
 					<and mandatory="true" name="Artikelkatalog">
-						<feature name="Kategorien"/>
+						<description>
+							Der Artikelkatalog umfasst die Produkte des Onlineshops die der 
+							Onlineshop vertreibt bzw. die zu erwerben sind.
+						</description>
+						<feature name="Kategorien">
+							<description>
+								Der Artikelkatalog kann optional in Kategorien unterteil sein wie
+								beispielsweise bei Kleidung in Hosen, Röcke, Kleider...
+							</description>
+						</feature>
 					</and>
-					<feature mandatory="true" name="Suche"/>
+					<feature mandatory="true" name="Suche">
+						<description>
+							Ein Onlineshop muss die Möglichkeit haben nach Artikeln im Shop 
+							zu suchen.
+						</description>
+					</feature>
 					<or mandatory="true" name="Bezahlsystem">
-						<feature mandatory="true" name="BankÜberweisung"/>
-						<feature mandatory="true" name="Paypal"/>
-						<feature mandatory="true" name="Rechnung"/>
-						<feature mandatory="true" name="Kreditkarte"/>
+						<description>
+							Ein Onlineshop muss Bezahlsysteme umfassen, um die Möglichkeit
+							zu haben die bestellten Artikel zu bezahlen.
+						</description>
+						<feature mandatory="true" name="BankÜberweisung">
+							<description>
+								Die Banküberweisung wäre eine Option eines Bezahlystem.
+							</description>
+						</feature>
+						<feature mandatory="true" name="Paypal">
+							<description>
+								Ein Bezahlsystem wäre außerdem die Möglichkeit von Paypal.
+							</description>
+						</feature>
+						<feature mandatory="true" name="Rechnung">
+							<description>
+								Es gibt auch die Möglichkeit des Bezahlsystem Rechnung, wobei
+								die Rechnung der Lieferung beiliegt.
+							</description>
+						</feature>
+						<feature mandatory="true" name="Kreditkarte">
+							<description>
+								Auch Kreditkartenzahlung ist eine Bezahlmöglichkeit.
+							</description>
+						</feature>
 					</or>
 					<alt mandatory="true" name="Sicherheit">
-						<feature mandatory="true" name="Hoch"/>
-						<feature mandatory="true" name="Standard"/>
+						<description>
+							Ein Onlineshop muss ein gewisses Sicherheitslevel umfassen.
+						</description>
+						<feature mandatory="true" name="Hoch">
+							<description>
+								Dieses Sicherheitslevel kann Hoch sein.
+							</description>
+						</feature>
+						<feature mandatory="true" name="Standard">
+							<description>
+								Das Sicherheitslevel kann auch Standard sein, je nach Genre/ Erfordernis.
+							</description>
+						</feature>
 					</alt>
 					<or name="Genre">
-						<feature mandatory="true" name="Textil"/>
-						<feature mandatory="true" name="Elektro"/>
-						<feature mandatory="true" name="Lebendsmittel"/>
-						<feature mandatory="true" name="Drogerie"/>
+						<description>
+							Ein Onlinehshop kann optional einem Genre unterliegen, zu welchem er Produkte umfasst.
+						</description>
+						<feature mandatory="true" name="Textil">
+							<description>
+								Das Genre Textil kennzeichnet Online Shops die Kleidung sprich Textilien vertreiben,
+								wie z.B. HundM.
+								
+							</description>
+						</feature>
+						<feature mandatory="true" name="Elektro">
+							<description>
+								Das Genre Elektro vertreibt Elektroartikel aller Art wie z.B. Media Markt.
+							</description>
+						</feature>
+						<feature mandatory="true" name="Lebendsmittel">
+							<description>
+								Das Genre Lebendsmittel vertreibt und liefert Lebensmittel frei Haus.
+							</description>
+						</feature>
+						<feature mandatory="true" name="Drogerie">
+							<description>
+								Onlineshops mit dem Genre Drogerie vertreiben und liefern
+								Produkte aus dem Drogeriebedarf wie Zahncreme, Schminke und Co.
+							</description>
+						</feature>
 					</or>
 					<or mandatory="true" name="Versand">
-						<feature mandatory="true" name="MorningExpress"/>
-						<feature mandatory="true" name="LateNightExpress"/>
-						<feature mandatory="true" name="Standardversand"/>
-						<feature mandatory="true" name="AnFiliale"/>
+						<description>
+							Ein Onlineshop muss die Möglichkeit des Versenden seiner Produkte haben.
+						</description>
+						<feature mandatory="true" name="MorningExpress">
+							<description>
+								Der Versand kann per morning express also zum nächsten Morgen erfolgen.
+							</description>
+						</feature>
+						<feature mandatory="true" name="LateNightExpress">
+							<description>
+								Der Versand kann aber auch noch Abends erfolgen.
+							</description>
+						</feature>
+						<feature mandatory="true" name="Standardversand">
+							<description>
+								Der Versand kann Standardmässig erfolgen.
+							</description>
+						</feature>
+						<feature mandatory="true" name="AnFiliale">
+							<description>
+								Wenn der Onlineshop Filialen besitzt kann auch dorthin versand werden.
+							</description>
+						</feature>
 					</or>
-					<feature mandatory="true" name="Warenkorb"/>
+					<feature mandatory="true" name="Warenkorb">
+						<description>
+							Ein Onlineshop muss einen Warenkorb für die Ware besitzen, die der Kunde kaufen möchte.
+						</description>
+					</feature>
 					<and mandatory="true" name="Webseite">
+						<description>
+							Ein Onlineshop brauchte eine Webseite.
+						</description>
 						<and mandatory="true" name="Design">
+							<description>
+								Die Webseite muss ein design umfassen.
+							</description>
 							<or mandatory="true" name="Farbe">
-								<feature mandatory="true" name="Rot"/>
-								<feature mandatory="true" name="Blau"/>
-								<feature mandatory="true" name="Bunt"/>
+								<description>
+									Das Design muss eine Farbe haben.
+								</description>
+								<feature mandatory="true" name="Rot">
+									<description>
+										Die Farbe kann rot sein.
+									</description>
+								</feature>
+								<feature mandatory="true" name="Blau">
+									<description>
+										Oder blau kann die Farbe auch sein.
+									</description>
+								</feature>
+								<feature mandatory="true" name="Bunt">
+									<description>
+										Oder Bunt kann die Farbe sein oder alle drei zusammen.
+									</description>
+								</feature>
 							</or>
 						</and>
 					</and>
 					<or name="MobileVersion">
-						<feature mandatory="true" name="IOS"/>
-						<feature mandatory="true" name="Android"/>
+						<description>
+							Ein Onlineshop kann optional eine MobileVersion für Tablets und Smartphones besitzen.
+						</description>
+						<feature mandatory="true" name="IOS">
+							<description>
+								Diese kann für IOS sein.
+							</description>
+						</feature>
+						<feature mandatory="true" name="Android">
+							<description>
+								Eine mobile Version kann auch für Android sein oder beides.
+							</description>
+						</feature>
 					</or>
-					<feature mandatory="true" name="AGB"/>
-					<feature name="FAQ"/>
-					<feature name="Newsletter"/>
-					<feature name="Merkzettel"/>
+					<feature mandatory="true" name="AGB">
+						<description>
+							Ein Onlineshop muss AGBs umfassen. Also Allgemeine Geschäftsbedingungen.
+						</description>
+					</feature>
+					<feature name="FAQ">
+						<description>
+							Es kann auch ein Frage Antwort Katalog zu Verfügung stehen.
+						</description>
+					</feature>
+					<feature name="Newsletter">
+						<description>
+							Ein Onlineshop kann auch einen Newsletter haben, der die Kunden 
+							per Email über neuste Angebote informiert.
+						</description>
+					</feature>
+					<feature name="Merkzettel">
+						<description>
+							Ein Onlineshop kann einen Merkzettel haben,der dem Kunden die
+							Möglichkeit gibt, Produkte die er favorisiert sich zu "merken".
+						</description>
+					</feature>
 				</and>
 			</and>
 		</struct>
