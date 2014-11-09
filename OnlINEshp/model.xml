@@ -5,7 +5,7 @@
 				<and name="Onlineshop">
 					<description>
 						Ein Onlineshop zum Vertrieb von Produkten einer Firma/eines Unternehmen. 
-						Dabei gibt es verpflichtende aber auch optionale Bestandteile.
+						Dabei gibt es verpflichtende(mandatory) aber auch optionale(optional) Bestandteile.
 					</description>
 					<and mandatory="true" name="Artikelkatalog">
 						<description>
