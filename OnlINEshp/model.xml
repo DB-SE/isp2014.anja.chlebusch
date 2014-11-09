@@ -3,6 +3,10 @@
 		<struct>
 			<and abstract="true" mandatory="true" name="Root">
 				<and name="Onlineshop">
+					<description>
+						Ein Onlineshop zum Vertrieb von Produkten einer Firma/eines Unternehmen. 
+						Dabei gibt es verpflichtende aber auch optionale Bestandteile.
+					</description>
 					<and mandatory="true" name="Artikelkatalog">
 						<description>
 							Der Artikelkatalog umfasst die Produkte des Onlineshops die der 
