@@ -6,7 +6,7 @@ import Objects.AGB;
 import Objects.FAQ;
 
 
-public class Settings {
+public class Onlineshop {
 	
 public static void main (String []args) throws Exception{
 	AGB AGB;
