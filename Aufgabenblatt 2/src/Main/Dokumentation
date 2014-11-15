@@ -1,0 +1,5 @@
+Ich habe die Implementierung mti folgenden Kombinationen getestet:
+1) FAQ=true und AGB=true --> Aktivierung von FAQ und AGB
+2) FAQ=true und AGB= false --> Aktivierung von FAQ 
+3) FAQ=false und AGB=true --> Aktivierung AGB
+4) FAQ=false und AGB=false --> keine Aktivierung
