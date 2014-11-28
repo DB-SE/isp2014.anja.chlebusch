@@ -104,7 +104,11 @@ public static void main (String []args) throws Exception{
 						//#endif
 					}
 					if(s.equals("Newsletter")){
+						//#ifdef Newsletter
 						Newsletter.println();
+						//#else
+//@						System.out.println("Newsletter existiert nicht");
+						//#endif
 						
 					}
 				
