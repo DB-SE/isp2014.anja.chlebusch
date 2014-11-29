@@ -86,7 +86,7 @@ public static void main (String []args) throws Exception{
 						//#ifdef Latenightexpress
 						Versand.latenightexpress();
 						//#else
-//@						System.out.println("Diese Versandart ist nicht m?glich");
+//@						System.out.println("Diese Versandart ist nicht moeglich");
 						//#endif
 					}
 					if(s.equals("Morningexpress")){
