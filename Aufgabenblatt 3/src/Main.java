@@ -35,7 +35,7 @@ public static void main (String []args) throws Exception{
 		scan = new Scanner(System.in);
 		while (true) {
 			String s = scan.next();
-			if(!s.equals("FAQ")&&(!s.equals("AGB"))&&(!s.equals("close"))&&(!s.equals("Versand"))&&(!s.equals("Latenightexpress"))&&(!s.equals("Newsletter"))){
+			if(!s.equals("FAQ")&&(!s.equals("Standard"))&&(s.equals("Morningexpress"))&&(!s.equals("AGB"))&&(!s.equals("close"))&&(!s.equals("Versand"))&&(!s.equals("Latenightexpress"))&&(!s.equals("Newsletter"))){
 				System.out.println("Falsche Eingabe,bitte versuchen Sie es erneut");
 			}
 			if(s.equals("FAQ")){
