@@ -1,0 +1,39 @@
+{
+	"features" : [
+		"Onlineshop",
+		"FAQ",
+		"AGB",
+		"Newsletter",
+		"Merkzettel",
+		"Artikelkatalog"
+	],
+	"roles": {
+		"main": {
+			"Onlineshop": "main"
+		},
+		"scannTest": {
+			"Onlineshop": "scannTest__wrappee__Onlineshop",
+			"AGB": "scannTest__wrappee__AGB",
+			"Merkzettel": "scannTest__wrappee__Merkzettel",
+			"Artikelkatalog": "scannTest",
+			"FAQ": "scannTest__wrappee__FAQ",
+			"Newsletter": "scannTest__wrappee__Newsletter"
+		},
+		"printAGB": {
+			"AGB": "printAGB"
+		},
+		"add": {
+			"Merkzettel": "add"
+		},
+		"printA": {
+			"Artikelkatalog": "printA"
+		},
+		"printFAQ": {
+			"FAQ": "printFAQ"
+		},
+		"println": {
+			"Newsletter": "println"
+		}
+	}
+
+}
